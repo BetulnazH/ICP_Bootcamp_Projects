@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "telefon_rehberi_backend": {
+      "main": "src/telefon_rehberi_backend/main.mo",
+      "type": "motoko"
+    },
+    "telefon_rehberi_frontend": {
+      "dependencies": [
+        "telefon_rehberi_backend"
+      ],
+      "source": [
+        "src/telefon_rehberi_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
